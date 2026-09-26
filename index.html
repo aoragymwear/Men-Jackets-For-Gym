@@ -1,0 +1,762 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover men's gym jackets designed for comfort, style, flexibility, and active lifestyles. Explore men's jackets for gym from AORA.">
+
+    <meta name="keywords" content="Men Jackets For Gym, men's gym jackets, gym jackets Pakistan, men's activewear, AORA">
+
+    <title>Men Jackets For Gym | AORA Activewear</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            background: #f3f7f5;
+            color: #222;
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            background: #071d17;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 800;
+            letter-spacing: 4px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #9ee0c4;
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #071d17,
+                    #12624d,
+                    #1b8063
+                );
+
+            color: #ffffff;
+            text-align: center;
+            padding: 95px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: auto;
+            font-size: 18px;
+            color: #e3f5ed;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 30px;
+
+            background: #ffffff;
+            color: #0c3c2f;
+
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+
+            transition: 0.3s ease;
+        }
+
+        .hero-button:hover {
+            background: #9ee0c4;
+            transform: translateY(-3px);
+        }
+
+        /* =========================
+           MAIN ARTICLE CONTAINER
+        ========================== */
+
+        .container {
+            width: 90%;
+            max-width: 1050px;
+
+            margin: 55px auto;
+
+            background: #ffffff;
+
+            padding: 55px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .container h2 {
+            color: #124c3c;
+            font-size: 30px;
+
+            margin-top: 42px;
+            margin-bottom: 15px;
+        }
+
+        .container h2:first-child {
+            margin-top: 0;
+        }
+
+        .container p {
+            color: #4c5753;
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+
+        /* =========================
+           ANCHOR LINK
+        ========================== */
+
+        .article-link {
+            color: #087453;
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+
+            transition: 0.3s ease;
+        }
+
+        .article-link:hover {
+            color: #071d17;
+        }
+
+        /* =========================
+           FEATURE SECTION
+        ========================== */
+
+        .features {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 20px;
+
+            margin: 28px 0 35px;
+        }
+
+        .feature-card {
+            background: #eff8f4;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            border-left:
+                5px solid #17805f;
+
+            transition: 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 10px 25px
+                rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-card h3 {
+            color: #124c3c;
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           AORA INFORMATION BOX
+        ========================== */
+
+        .aora-box {
+            margin-top: 40px;
+
+            padding: 38px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #e2f5ec,
+                    #f5fbf8
+                );
+
+            border-radius: 16px;
+
+            border:
+                1px solid #c7e6d8;
+        }
+
+        .aora-box h2 {
+            margin-top: 0;
+        }
+
+        .aora-button {
+            display: inline-block;
+
+            margin-top: 10px;
+
+            padding: 12px 26px;
+
+            background: #147557;
+            color: #ffffff;
+
+            text-decoration: none;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+
+            transition: 0.3s ease;
+        }
+
+        .aora-button:hover {
+            background: #071d17;
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #071d17;
+            color: #ffffff;
+
+            margin-top: 60px;
+
+            padding:
+                50px 20px 20px;
+        }
+
+        .footer-container {
+            width: 90%;
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                2fr 1fr 1fr;
+
+            gap: 45px;
+        }
+
+        .footer-column h3 {
+            color: #9ee0c4;
+
+            margin-bottom: 15px;
+
+            font-size: 19px;
+        }
+
+        .footer-column p {
+            color: #c8d8d2;
+
+            font-size: 14px;
+        }
+
+        .footer-column a {
+            display: block;
+
+            color: #c8d8d2;
+
+            text-decoration: none;
+
+            margin-bottom: 9px;
+
+            font-size: 14px;
+
+            transition: 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            color: #ffffff;
+        }
+
+        .copyright {
+            width: 90%;
+            max-width: 1100px;
+
+            margin: 35px auto 0;
+
+            padding-top: 20px;
+
+            border-top:
+                1px solid
+                rgba(255, 255, 255, 0.15);
+
+            text-align: center;
+
+            color: #8fa49d;
+
+            font-size: 13px;
+        }
+
+        /* =========================
+           RESPONSIVE DESIGN
+        ========================== */
+
+        @media (max-width: 768px) {
+
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 70px 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .container {
+                width: 94%;
+                padding: 30px 22px;
+                margin: 35px auto;
+            }
+
+            .container h2 {
+                font-size: 25px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .aora-box {
+                padding: 25px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .logo {
+                font-size: 25px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 4px 5px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .container {
+                padding: 25px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="nav-container">
+
+            <div class="logo">
+                AORA
+            </div>
+
+            <nav>
+                <a href="https://aora.pk/">Home</a>
+                <a href="https://aora.pk/">Activewear</a>
+                <a href="https://aora.pk/">Shop</a>
+                <a href="https://aora.pk/">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <h1>
+            Men Jackets For Gym
+        </h1>
+
+        <p>
+            Discover the perfect combination of style, comfort,
+            and performance with modern men's gym jackets designed
+            for active lifestyles.
+        </p>
+
+        <a
+            href="https://aora.pk/collections/men-jackets"
+            class="hero-button"
+        >
+            Explore Gym Jackets
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         ARTICLE
+    ========================== -->
+
+    <main class="container">
+
+        <h2>
+            Why Choose a Gym Jacket?
+        </h2>
+
+        <p>
+            A gym jacket is useful for more than just staying warm.
+            Lightweight athletic jackets can be worn before and after
+            workouts while allowing comfortable movement during
+            different activities. They can also make it easier to
+            transition from the gym to everyday activities without
+            changing your entire outfit.
+        </p>
+
+        <p>
+            For outdoor training, a suitable jacket can provide an
+            additional layer against cool weather. At the gym, it
+            can be particularly useful during warm-ups or when
+            moving between indoor and outdoor environments.
+        </p>
+
+
+        <h2>
+            Features of a Good Men's Gym Jacket
+        </h2>
+
+        <p>
+            When selecting
+            <a
+                href="https://aora.pk/collections/men-jackets"
+                class="article-link"
+            >
+                Men Jackets For Gym
+            </a>,
+            consider features that match your training routine.
+        </p>
+
+
+        <!-- Feature Cards -->
+
+        <div class="features">
+
+            <div class="feature-card">
+
+                <h3>
+                    Lightweight Material
+                </h3>
+
+                <p>
+                    A lightweight jacket is easy to wear over a
+                    T-shirt without feeling bulky.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    Comfortable Fit
+                </h3>
+
+                <p>
+                    A suitable fit should provide enough room for
+                    stretching, lifting, running, and other movements.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    Breathable Construction
+                </h3>
+
+                <p>
+                    Breathable materials can help provide greater
+                    comfort during active sessions.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    Practical Design
+                </h3>
+
+                <p>
+                    Features such as full zippers, pockets, and
+                    adjustable elements can make a jacket more
+                    convenient for everyday use.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    Modern Style
+                </h3>
+
+                <p>
+                    Contemporary athletic designs allow gym jackets
+                    to work well with T-shirts, joggers, shorts,
+                    and other activewear.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <h2>
+            How to Style Men's Gym Jackets
+        </h2>
+
+        <p>
+            Men's gym jackets can be paired with different activewear
+            pieces to create a practical workout outfit. A lightweight
+            jacket over a gym T-shirt and athletic joggers is suitable
+            for many training routines. For warmer conditions, a jacket
+            can also be paired with gym shorts and a breathable T-shirt
+            when needed.
+        </p>
+
+        <p>
+            Neutral and versatile designs can also be worn for casual
+            activities, making a quality gym jacket a useful addition
+            to an everyday wardrobe.
+        </p>
+
+
+        <!-- AORA SECTION -->
+
+        <div class="aora-box">
+
+            <h2>
+                Men's Gym Jackets by AORA
+            </h2>
+
+            <p>
+                AORA is a UAE-designed activewear and sportswear brand
+                expanding in Pakistan. The brand focuses on contemporary
+                athletic clothing designed for active lifestyles, including
+                gym T-shirts, jackets, shorts, and other sportswear.
+            </p>
+
+            <p>
+                For fitness enthusiasts looking for comfortable and stylish
+                workout apparel, AORA provides activewear that can complement
+                different training routines. A men's gym jacket can be a
+                practical choice for warm-ups, outdoor exercise, travelling
+                to the gym, and everyday casual wear.
+            </p>
+
+            <a
+                href="https://aora.pk/collections/men-jackets"
+                class="aora-button"
+            >
+                View Men's Jackets
+            </a>
+
+        </div>
+
+
+        <h2>
+            Conclusion
+        </h2>
+
+        <p>
+            Men's jackets for gym are a practical and stylish addition
+            to any activewear collection. By considering factors such
+            as fit, material, breathability, functionality, and design,
+            you can choose a jacket that suits your workout routine
+            and lifestyle.
+        </p>
+
+        <p>
+            Whether you're heading to the gym, warming up before training,
+            or exercising outdoors, a well-designed gym jacket can provide
+            the versatility and comfort needed to support an active lifestyle.
+        </p>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>
+                    AORA
+                </h3>
+
+                <p>
+                    UAE-designed activewear and sportswear for modern
+                    active lifestyles. Explore stylish and comfortable
+                    gym apparel designed for movement and everyday wear.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="https://aora.pk/">
+                    Home
+                </a>
+
+                <a href="https://aora.pk/">
+                    Men's Activewear
+                </a>
+
+                <a href="https://aora.pk/">
+                    Gym T-Shirts
+                </a>
+
+                <a href="https://aora.pk/collections/men-jackets">
+                    Men's Gym Jackets
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Website
+                </h3>
+
+                <a href="https://aora.pk/">
+                    AORA.pk
+                </a>
+
+                <a href="https://aora.pk/collections/men-jackets">
+                    Shop Men's Jackets
+                </a>
+
+                <a href="https://aora.pk/">
+                    Contact AORA
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 AORA. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```
